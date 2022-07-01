@@ -67,6 +67,10 @@ main {
     height: 3.5vw;
 }
 
+.nav__logo img:hover {
+    transform: scale(120%);
+}
+
 .nav__logo h1 {
     display: inline-block;
     font-size: 1.1vw;
@@ -119,12 +123,23 @@ main {
     font-size: 2.2vw;
     border-radius: 2.5vw;
     background-color: #CAEBF2;
-    transition: transform 0.4s;
+    cursor: pointer;
+    background-position: left;
+    transition: background-position 4s;
 }
 
 .boton-contactar:hover {
     /* transform: translateY(-2px); */
-    transform: translate(10px)
+    transform: scale(1.2);
+    background-image: linear-gradient(to right, rgb(114, 198, 209),rgb(143, 5, 5), rgb(255, 3, 3));
+    background-size: 300%;
+    background-position: right;
+    color: #A9A9A9;
+    
+}
+
+.boton-contactar:active {
+    transform: translate(10px);
 }
 
 
@@ -573,11 +588,13 @@ footer div a img {
     display: block;
     padding: 1.5vh;
     border-radius: 20px;
+    transition: background-color 2s, font-size 3s;
 }
 
 .main-precios ul li a:hover {
-    background-color: #fc7d7d;
+    background-color: #A9A9A9;
     color: white;
+    font-size: 200%;
 }
 
 
