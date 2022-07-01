@@ -1,0 +1,259 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Karla', sans-serif; */
+    /* font-family: 'Oxygen', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Yrsa', serif; 
+}
+
+.color1 {color: #b40404;}
+.color2 {color: #fc7d7d;} /*este color lo repito por la pleta, no me convence, revisar si podemos establecer otra paleta mejor */
+.color3 {color: #950303;}
+.color4 {color: #CAEBF2;}
+.color5 {color: #A9A9A9;}
+.color6 {color: #EFEFEF;}
+
+
+body {
+    display: grid;
+    grid-template-areas: 
+    "nav nav nav"
+    "main main main"
+    "footer footer footer";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 8%, 1fr, 8%;
+}
+
+
+header, footer {
+    background-color: #EFEFEF;
+}
+
+.header {
+    border-bottom: 8px #fc7d7d solid;
+    /* height: 100px; */
+    padding-top: 8px;
+    grid-area: nav;
+}
+main {
+    grid-area: main;
+}
+
+/* INICIA AQUÍ EL NAV*/
+.nav {
+    width: 90%;
+    max-width: 1600px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.nav__logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav__logo a {
+    display: inline-block;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+
+}
+
+.nav__logo img {
+    /* display: flex; */
+    display: inline-block;
+    height: 50px;
+}
+
+.nav__logo h1 {
+    display: inline-block;
+    font-size: 1.5em;
+    font-family: "Hind Madurai", sans-serif;
+    
+}
+
+
+.nav__ul li {
+    list-style: none;
+    display: inline-block;
+    /* display: flex; */
+    margin: 0 2.5rem;
+    text-decoration: none;
+    font-size: 1.6em;
+    position: relative;
+    font-family: 'Oxygen', sans-serif;
+}
+
+.nav__ul li::before {
+    content: "";
+    height: 2px;
+    width: 0%;
+    background-image: linear-gradient(to right,rgb(143, 5, 5), rgb(255, 3, 3));
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    transition: 0.8s ease-out;
+}
+
+.nav__ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav__ul li:hover::before {
+    width: 100%;
+}
+
+.boton-contactar {
+    width: 150px;
+    height: 60px;
+    font-size: 1.4em;
+    border-radius: 25px;
+}
+
+/* AQUÍ TERMINA EL NAV*/
+
+/* AQUI EMPIEZA EL MAIN DE INDEX */
+/* AQUI EMPIEZA SECTION ONE */
+
+
+.section_one__div {
+    display: flex;
+    border-bottom: 8px #fc7d7d solid;
+}
+
+.section_one__img {
+    width: 100%;
+    position: relative;
+}
+
+.section_one__img--flecha {
+    width: 100%;
+    position: absolute;
+    opacity: 30%;
+    left: 43%;
+    
+}
+
+
+.section_one__h2 {
+    position: absolute;
+    top: 25%;
+    left: 9%;
+    font-size: 2.6rem;
+    font-family: "Roboto";
+    text-shadow: .05rem -.05rem .3rem #b40404;
+}
+
+
+
+
+
+/* AQUI TERMINA SECTION ONE */
+/* AQUI EMPIEZA SECTION TWO */
+
+.section_two, .section_three {
+    background: linear-gradient(95deg,#CAEBF2,#EFEFEF);
+    padding-bottom: 5em;
+}
+
+.section_two__div_one {
+    display: flex;
+    height: 180px;
+    align-items: center;
+}
+
+.section_two__div_one--h2 {
+    font-size: 4em;
+    background: linear-gradient(95deg, #740000, #B30000);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 10%;
+    left: 10%;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.section_two__div_two {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    border-top: 12px solid;
+    padding-top: 3em;
+    justify-content: space-around;
+    font-size: 2.5em;
+    list-style-type: none;
+    
+}
+
+.section_two__div_two--subul {
+    font-size: .4em;
+    margin-top: 2em;
+    line-height: 2;
+    list-style-type: disc;
+}
+
+ol li::marker {
+     color: transparent;
+}
+
+.section_two__div_two--subul ::marker {
+    color: #fc7d7d;
+    font-size: 200%;
+}
+
+.section_three {
+    font-size: 2rem;
+    text-align: center;
+    color: #fc7d7d;
+}
+
+.section_three h2 {
+    color: black;
+    font-family: "roboto";
+}
+
+
+/* AQUI TERMINA SECTION TWO */
+
+/* AQUI EMPIEZA FOOTER */
+
+footer {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    grid-area: footer;
+}
+
+footer h3 {
+    font-family: "Oxygen", "karla";
+    font-size: .6rem;
+    padding: 5em 0;
+}
+
+footer div {
+    width: 10em;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 0;
+}
+footer div a {
+    height: 4em;
+    width: 4em;
+}
+footer div a img {
+    height: 4em;
+    width: 4em;
+
+}
+
+/* AQUI TERMINA FOOTER  */
+
+/* AQUÍ termina INDEX */

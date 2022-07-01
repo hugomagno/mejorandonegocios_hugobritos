@@ -1,0 +1,528 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Karla', sans-serif; */
+    /* font-family: 'Oxygen', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Yrsa', serif; 
+}
+
+.color1 {color: #b40404;}
+.color2 {color: #fc7d7d;} /*este color lo repito por la pleta, no me convence, revisar si podemos establecer otra paleta mejor */
+.color3 {color: #950303;}
+.color4 {color: #CAEBF2;}
+.color5 {color: #A9A9A9;}
+.color6 {color: #EFEFEF;}
+
+
+
+header, footer {
+    background-color: #EFEFEF;
+}
+
+.header {
+    border-bottom: 8px #fc7d7d solid;
+    height: 100px;
+    padding-top: 8px;
+}
+
+/* INICIA AQUÍ EL NAV*/
+.nav {
+    width: 90%;
+    max-width: 1600px;
+    margin: auto;
+    /* padding: 25px, 0; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.nav__logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav__logo a {
+    display: inline-block;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+
+}
+
+.nav__logo img {
+    /* display: flex; */
+    display: inline-block;
+    height: 50px;
+}
+
+.nav__logo h1 {
+    display: inline-block;
+    font-size: 1.5em;
+    font-family: "Hind Madurai", sans-serif;
+    
+}
+
+
+.nav__ul li {
+    list-style: none;
+    display: inline-block;
+    /* display: flex; */
+    margin: 0 2.5rem;
+    text-decoration: none;
+    font-size: 1.6em;
+    position: relative;
+    font-family: 'Oxygen', sans-serif;
+}
+
+.nav__ul li::before {
+    content: "";
+    height: 2px;
+    width: 0%;
+    background-image: linear-gradient(to right,rgb(143, 5, 5), rgb(255, 3, 3));
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    transition: 0.8s ease-out;
+}
+
+.nav__ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav__ul li:hover::before {
+    width: 100%;
+}
+
+.boton-contactar {
+    width: 150px;
+    height: 60px;
+    font-size: 1.4em;
+    border-radius: 25px;
+}
+
+/* AQUÍ TERMINA EL NAV*/
+
+/* AQUI EMPIEZA EL MAIN DE INDEX */
+/* AQUI EMPIEZA SECTION ONE */
+
+
+.section_one__div {
+    display: flex;
+    border-bottom: 8px #fc7d7d solid;
+    align-items: center;
+}
+
+.section_one__img {
+    width: 100%;
+    position: relative;
+}
+
+.section_one__img--flecha {
+    width: 100%;
+    position: absolute;
+    opacity: 30%;
+    left: 43%;
+    
+}
+
+
+.section_one__h2 {
+    position: absolute;
+    top: 25%;
+    left: 9%;
+    font-size: 2.6rem;
+    font-family: "Roboto";
+    text-shadow: .05rem -.05rem .3rem #b40404;
+}
+
+
+
+
+
+/* AQUI TERMINA SECTION ONE */
+/* AQUI EMPIEZA SECTION TWO */
+
+.section_two {
+    background: linear-gradient(95deg,#CAEBF2,#EFEFEF);
+    padding-bottom: 5em;
+}
+
+.section_two__div_one {
+    display: flex;
+    height: 180px;
+    align-items: center;
+}
+
+.section_two__div_one--h2 {
+    font-size: 4em;
+    background: linear-gradient(95deg, #740000, #B30000);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 10%;
+    left: 10%;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.section_two__div_two {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    border-top: 12px solid;
+    padding-top: 3em;
+    justify-content: space-around;
+    font-size: 2.5em;
+    list-style-type: none;
+    
+}
+
+.section_two__div_two--subul {
+    font-size: .4em;
+    margin-top: 2em;
+    line-height: 2;
+    list-style-type: disc;
+}
+
+ol li::marker {
+     color: transparent;
+}
+
+.section_two__div_two--subul ::marker {
+    color: #fc7d7d;
+    font-size: 200%;
+}
+
+
+/* AQUI TERMINA SECTION TWO */
+
+/* AQUI EMPIEZA FOOTER */
+
+footer {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+
+footer h3 {
+    font-family: "Oxygen", "karla";
+    font-size: .6rem;
+    padding: 5em 0;
+}
+
+footer div {
+    width: 10em;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 0;
+}
+footer div a {
+    height: 4em;
+    width: 4em;
+}
+footer div a img {
+    height: 4em;
+    width: 4em;
+
+}
+
+/* AQUI TERMINA FOOTER  */
+
+/* AQUÍ termina INDEX */
+
+/* AQUÍ EMPIEZA CONTACTO.HTML */
+
+.section_form {
+    max-width: 1600px;
+    display: flex;
+}
+
+.section_form__container {
+    position: relative;
+    justify-content: center;
+}
+
+.section_form img {
+    width: 100%;
+}
+
+.section_form__container form {
+    position: absolute;
+    margin: auto;
+    font-size: 2rem;
+    right: 35vh;
+    top: 8vh;
+    border: 2px solid;
+    border-radius: 20px;
+    padding: 3rem;
+    display: grid;
+    gap: 1rem;
+    width: 30rem;
+}
+
+
+.section_form__container form h2 {
+    font-size: 4rem;
+    text-shadow: .15rem -.15rem .3rem #b40404;
+}
+
+
+
+.section_form__container form h3 {
+    font-size: 2rem;
+    text-shadow: .15rem -.15rem .3rem #b40404;
+}
+
+.section_form__container form button {
+    width: 100%;
+    font-size: inherit;
+    border-radius: 25px;
+}
+
+/* AQUÍ TERMINA --------------------CONTACTO.HTML-------------------- */
+
+/* AQUÍ COMIENZA --------------------NOSOTROS.HTML-------------------- */
+
+.main-nosotros {
+    background-color: #fc7d7d;
+}
+
+
+/* AQUI EMPIEZA NOSOTROS SECTION 2 */
+
+.section-nosotros {
+    display: flex;
+    margin-bottom: 10px;
+    border-bottom: #fc7d7d 60px;
+}
+
+.section-nosotros img {
+    position: relative;
+    width: 100%;
+    opacity: 50%;
+    background-color: lightsteelblue; 
+    /* background: linear-gradient(rgba( 5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)) ; */
+}
+
+.section-nosotros div {
+    position: absolute;
+    text-align: center;
+    margin: 20% 20%;
+    /* left: 50vh;
+    top: 50vh; */
+    font-size: 2rem;
+    color: #000000;
+    text-shadow: .05rem -.05rem  #A9A9A9;
+    display: grid;
+    gap: 3rem;
+}
+
+.section-nosotros div h1 {
+    font-size: 4rem;
+    box-shadow: .05rem -.05rem  #A9A9A9;;
+    border-radius: 15px;
+}
+
+.section-nosotros h2 {
+    font-size: 2.5rem;
+    border-bottom: 4px solid;
+    border-radius: 15px;
+    box-shadow: .05rem -.05rem  #A9A9A9;
+}
+
+/* AQUI TERMINA NOSOTROS SECTION 1 */
+
+/* AQUI EMPIEZA NOSOTROS SECTION 2 */
+
+.section-nosotros-dos {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    /* background: linear-gradient(45deg, #490e0e, #b40404); */
+    background-color: #fc7d7d;
+}
+
+.section-nosotros-dos img {
+    max-width: 50%;
+    /* max-height: 50vw; */
+
+}
+
+.section-nosotros-dos div {
+    margin: 25% 3%;    
+    font-size: 1.5rem;
+    box-shadow: .05rem -.05rem  #A9A9A9;
+    text-shadow: .1
+    rem -.1rem  black;
+    color: white;
+
+}
+
+
+
+
+
+
+/* AQUI TERMINA NOSOTROS SECTION 2 */
+
+/* AQUÍ TERMINA --------------------NOSOTROS.HTML-------------------- */
+
+
+/* AQUÍ EMPIEZA --------------------¿POR QUÉ.HTML-------------------- */
+
+/* AQUI EMPIEZA SECTION 1 */
+.section-porque-uno {
+    display: grid;
+    max-width: 600px;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    gap: 3rem;
+    margin-top: 30px;
+}
+
+.section-porque-uno h1 {
+    max-width: 90%;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.section-porque-uno img {
+    display: inline-block;
+    justify-content: center;
+    /* margin-left: 20%; */
+
+    /* Si no le daba un máximo de 600px al contenedor, la imagen quedaba desplazada para la izquierda, verificar el centrado. Igual así lo quería en esta sección, pero técnicamente falta eso si quisiera cambiarlo */
+}
+
+/* AQUI TERMINA SECTION 1 */
+
+/* AQUI EMPIEZA SECTION 2 */
+
+.section-5-art {
+    margin: 60px auto;
+    display: grid;
+    gap: 2rem;
+    text-shadow: .5px -.5px .0001rem white;
+    max-width: 90%;
+}
+
+.section-5-art h2 {
+    text-decoration: underline;
+}
+
+.articulos {
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.section-5-art--1 {
+    background: linear-gradient(rgba(238, 240, 243, 0.7), rgba(235, 236, 238, 0.5)), url(../img/por_que/porque4.jpg) no-repeat center;
+    background-size: cover;
+
+}
+
+.section-5-art--2 {
+    background-color: #EFEFEF;
+}
+
+.section-5-art--3 {
+    background: linear-gradient(rgba(238, 240, 243, 0.7), rgba(235, 236, 238, 0.5)), url(../img/por_que/porque2.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.section-5-art--4 {
+    background-color: #EFEFEF;
+}
+
+.section-5-art--5 {
+    background: linear-gradient(rgba(238, 240, 243, 0.7), rgba(235, 236, 238, 0.5)), url(../img/por_que/apalancamiento1.jpg) no-repeat center;
+    background-size: cover;
+}
+
+
+
+/* AQUI TERMINA SECTION 2 */
+
+
+
+/* AQUÍ TERMINA --------------------¿POR QUÉ.HTML-------------------- */
+
+
+/* AQUÍ EMPIEZA --------------------PRECIOS.HTML-------------------- */
+
+.main-precios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #fc7d7d;
+}
+
+.main-precios section {
+    background: #CAEBF2;
+    font-family: "roboto";
+    width: 300px;
+    margin: 20px;
+}
+
+.precios-titulo {
+    margin: 0;
+    text-align: center;
+    font-size: 25px;
+    text-transform: uppercase;
+    padding: 10px;
+    color: #A9A9A9;
+}
+
+.one {
+    background-color: #740000;
+}
+
+.two {
+    background-color: #950303;
+}
+
+.three {
+    background-color: #B30000;
+}
+
+.primer-li span {
+    display: block;
+    font-size: 60px;
+    }
+
+.main-precios ul li {
+    list-style-type: none;
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.main-precios ul li a {
+    text-decoration: none;
+    color: black;
+    background: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    display: block;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.main-precios ul li a:hover {
+    background-color: #fc7d7d;
+    color: white;
+}
+
+
+
+/* AQUÍ TERMINA --------------------PRECIOS.HTML-------------------- */
+
+
+/* FIN PRIMERA PRE ENTREGA GRACIAS POR LEER HASTA ACÁ*/
