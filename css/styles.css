@@ -309,17 +309,18 @@ footer div a img {
 .section_form form {
     grid-column-start: 2;
     margin: auto;
-    left: 55vw;
-    top: 25vh;
+    /* left: 55vw; */
+    /* top: 25vh; */
     border: 2px solid;
-    border-radius: 20px;
+    border-radius: 30px;
     padding: 3vw;
     display: grid;
     gap: 1vh;
-    width: 35%;
+    width: 49%;
     max-height: 70%;
     /* min-width: 30vw; */
     height: 90vh;
+    margin-right: 16vw;
 }
 
 .section_form label,.section_form input,.section_form button {
